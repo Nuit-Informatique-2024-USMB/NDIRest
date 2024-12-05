@@ -1,6 +1,6 @@
 import AbstractRoute from "../../AbstractRoute";
 import {FastifyReply, FastifyRequest} from "fastify";
-import Anecdote from "../../models/Anectode";
+import Anecdote from "../../models/Anecdote";
 import { log } from "console";
 import AnecdoteController from "../../controllers/AnecdoteController";
 

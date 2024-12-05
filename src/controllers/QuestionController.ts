@@ -13,4 +13,5 @@ export default class QuestionController {
     @GET("/")
     public handlerGetQuestions = async(req: FastifyRequest, reply: FastifyReply) => await new GetQuestionsRoute().run(req, reply);
 
+
 }

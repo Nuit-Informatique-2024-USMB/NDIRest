@@ -1,12 +1,12 @@
 import { model, Schema, Types } from 'mongoose';
 
-export interface IAnectode {
+export interface IAnecdote {
     _id: Types.ObjectId
     content : string;
     title : string;
 }
 
-const anecdoteSchema = new Schema<IAnectode>({
+const anecdoteSchema = new Schema<IAnecdote>({
     content: { type: String, required: true },
     title: { type: String, required: true },
 }, {
@@ -14,4 +14,4 @@ const anecdoteSchema = new Schema<IAnectode>({
     timestamps: true,
 });
 
-export default model<IAnectode>('Anectode', anecdoteSchema, 'anectodes');
+export default model<IAnecdote>('Anectode', anecdoteSchema, 'anecdotes');
